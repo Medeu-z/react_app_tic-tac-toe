@@ -1,0 +1,92 @@
+
+  body {
+    font-family: sans-serif;
+    background-color:white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #270752c5;
+    perspective: 10em;
+ 
+  }
+  
+  .scene {
+    position: relative;
+   
+  }
+  
+  .floor{
+    position: absolute;
+    
+    transform: translate(-29%, -40%)
+               rotateX(80deg);
+    width: 82vw;
+    height: 80vh;
+    background-image: repeating-linear-gradient(#270752c5, white);
+    background-size: 2em 2em;
+  }
+
+  .Border{
+      margin-top: -10px;
+      margin-bottom: 90px;
+      width: 410px;
+      height: 350px;
+      background-color: #4F3A65;
+      padding: 20px 10px 10px 10px;
+      text-align: center;
+      color:rgb(71, 53, 31) ;
+      font-size: smaller;
+      span{
+        color: #d7d0e7;
+      }
+      h1{
+        margin-top: -20px;
+        
+      }
+      
+  }
+
+  
+  .grid-container {
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 10px;
+    background: #d7d0e7;
+    
+    
+  }
+  .grid-item {
+    width: 90px;
+    height: 41px;
+    text-align: center;
+    background-color:#4F3A65;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  @media screen and (max-width: 500px) {
+    .Border {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+
+  .buttons{
+    padding: 10px;
+    color: #d7d0e7;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+
+  .choice{
+    margin-top: -0.2em;
+    font-size: 8em;
+    
+  }
